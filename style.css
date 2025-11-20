@@ -487,3 +487,19 @@
         grid-template-columns: 1fr;
       }
     }
+
+/* ===== MOBILE FIXES ===== */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;   /* stack hero sections */
+  }
+
+  .cards {
+    grid-template-columns: 1fr;   /* 1 card per row */
+  }
+
+  main {
+    padding: 15px 12px 40px;
+  }
+}
+
