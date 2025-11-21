@@ -1,317 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Taana Bana Kids – Handknit Kidswear</title>
-  <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Taana Bana Kids – Handmade Kidswear</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
+<!-- NAVBAR -->
 <header>
-  <div class="nav">
-    <div class="logo">
-      <span>🧶 Taana Bana Kids</span>
-      <span class="logo-tag">Handknit with love</span>
+    <div class="nav container">
+        <div class="logo">
+            🧶 Taana Bana Kids
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">☰</div>
     </div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#collection">Collection</a>
-      <a href="#about">About</a>
-      <a href="#size">Size Guide</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <button class="btn-primary" onclick="window.location.href='https://wa.me/91XXXXXXXXXX'">
-      Order on WhatsApp
-    </button>
-  </div>
 </header>
 
-<main>
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div>
-      <div class="hero-badge">
-        🌸 Handmade in India · Kids 0–10 yrs
-      </div>
-      <h1 class="hero-title">
-        Soft, cozy <span>hand-knit</span> clothing for your little ones.
-      </h1>
-      <p class="hero-sub">
-        Taana Bana Kids creates custom, hand-knitted sweaters, booties and sets –
-        made by mom, stitched with love, perfect for gifting and everyday comfort.
-      </p>
+<!-- HERO -->
+<section id="home" class="hero fade-in container">
+    <div class="hero-text">
+        <h1>Soft, Cozy & Handmade <span>Kidswear</span></h1>
+        <p>Premium hand-knitted sweaters, booties and sets for newborns to 10-year-olds. Custom colours and perfect fits.</p>
 
-      <div class="hero-cta">
-        <button class="btn-primary" onclick="document.getElementById('collection').scrollIntoView({behavior: 'smooth'})">
-          View collection
-        </button>
-        <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">
-          Ask for custom order →
-        </button>
-      </div>
-
-      <div class="hero-meta">
-        <span>✅ Premium anti-allergic yarn</span>
-        <span>✅ Made-to-order fits</span>
-        <span>✅ Pan-India shipping</span>
-      </div>
+        <div class="buttons">
+            <a href="#collection" class="btn-primary">View Collection</a>
+            <a href="#contact" class="btn-outline">Order Now</a>
+        </div>
     </div>
 
-    <div class="hero-image">
-      <div class="hero-tag-chip">New · Winter 2025</div>
-      <div class="hero-tag-chip bottom">Custom name embroidery</div>
-      <div class="hero-image-inner">
-        Add 1–3 product photos here (e.g. a flat-lay of sweaters / booties).
-        Replace this box with an &lt;img&gt; tag once you have pictures.
-      </div>
+    <div class="hero-img">
+        <img src="images/placeholder.png" alt="Handmade kids sweater" />
     </div>
-  </section>
+</section>
 
-  <!-- COLLECTION -->
-  <section id="collection">
-    <div class="section-header">
-      <h2>Our collection</h2>
-      <p>All pieces are made to order. Colours and sizes can be customized.</p>
-    </div>
+<!-- COLLECTION -->
+<section id="collection" class="section container fade-in">
+    <h2>Our Collection</h2>
 
     <div class="cards">
-      <article class="card">
-        <span class="card-badge">Best seller</span>
-        <h3 class="card-title">Winter Sweaters</h3>
-        <p class="card-meta">0–10 years · custom colours</p>
-        <ul>
-          <li>Classic cable and rib patterns</li>
-          <li>Name / initials on request</li>
-          <li>Perfect for winter photoshoots</li>
-        </ul>
-        <div class="pill-row">
-          <span class="pill">Starting from ₹XXXX</span>
-          <span class="pill">Dispatch: 5–7 days</span>
+        <div class="card">
+            <h3>Winter Sweaters</h3>
+            <p>Custom colours · Soft yarn · Perfect fit</p>
         </div>
-      </article>
 
-      <article class="card">
-        <span class="card-badge">New</span>
-        <h3 class="card-title">Baby Sets</h3>
-        <p class="card-meta">0–18 months</p>
-        <ul>
-          <li>Matching sweater, cap & booties</li>
-          <li>Soft yarn for newborn skin</li>
-          <li>Ideal baby shower gift</li>
-        </ul>
-        <div class="pill-row">
-          <span class="pill">Gift-ready packaging</span>
+        <div class="card">
+            <h3>Baby Gift Sets</h3>
+            <p>Sweater + cap + booties · Premium quality</p>
         </div>
-      </article>
 
-      <article class="card">
-        <span class="card-badge">Cozy</span>
-        <h3 class="card-title">Booties & Caps</h3>
-        <p class="card-meta">0–3 years</p>
-        <ul>
-          <li>Anti-slip optional sole</li>
-          <li>Fun colours & patterns</li>
-          <li>Sold as sets or single pieces</li>
-        </ul>
-        <div class="pill-row">
-          <span class="pill">Mix & match</span>
+        <div class="card">
+            <h3>Booties & Caps</h3>
+            <p>0–3 years · Super soft · Anti-allergic</p>
         </div>
-      </article>
 
-      <article class="card">
-        <span class="card-badge">Custom</span>
-        <h3 class="card-title">Made-to-Order Designs</h3>
-        <p class="card-meta">Share reference photos</p>
-        <ul>
-          <li>Custom patterns and motifs</li>
-          <li>Sibling matching outfits</li>
-          <li>Festival / birthday themes</li>
-        </ul>
-        <div class="pill-row">
-          <span class="pill">Message us for quote</span>
+        <div class="card">
+            <h3>Custom Orders</h3>
+            <p>Share your design · We knit it</p>
         </div>
-      </article>
     </div>
-  </section>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-header">
-      <h2>Made by mom, for your little one</h2>
-      <p>Every piece is hand-knitted, not mass-produced.</p>
+<!-- ABOUT -->
+<section id="about" class="section container fade-in">
+    <h2>About Us</h2>
+    <p>
+        Taana Bana Kids is a homegrown brand focused on bringing back the beauty 
+        of hand-knitted clothing. Every piece is personally knitted with love, using 
+        baby-safe, premium yarn.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section container fade-in">
+    <h2>Contact Us</h2>
+
+    <div class="contact-box">
+        <p><strong>WhatsApp:</strong> +91 XXXXX XXXXX</p>
+        <p><strong>Instagram:</strong> @taanabanakids</p>
+        <p>We ship across India. Custom designs welcome.</p>
+
+        <a href="https://wa.me/91XXXXXXXXXX" class="btn-primary">Order on WhatsApp</a>
     </div>
-
-    <div class="about">
-      <div>
-        <p>
-          Taana Bana Kids started with one simple idea: bring back the warmth of
-          hand-knit clothes that many of us grew up with.
-        </p>
-        <p>
-          Every item is personally knitted by mom – carefully choosing colours,
-          patterns and yarn that is gentle on children’s skin.
-        </p>
-        <ul class="about-list">
-          <li>Handmade in India – no factory, no bulk machines.</li>
-          <li>Only baby-friendly, soft yarns are used.</li>
-          <li>Custom sizing for healthy, comfortable fits.</li>
-          <li>Perfect for gifting, festivals and everyday wear.</li>
-        </ul>
-      </div>
-
-      <div class="about-highlight">
-        <strong>What we believe</strong>
-        <p>
-          Clothes for kids should be comfortable first, cute second, and
-          durable always. That’s why we focus on soft yarn, neat finishing and
-          strong stitching that survives crawling, climbing and a million washes.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SIZE + CARE -->
-  <section id="size">
-    <div class="section-header">
-      <h2>Size & care guide</h2>
-      <p>Use this as a basic guide. We can also knit to custom measurements.</p>
-    </div>
-
-    <div class="size-care">
-      <div>
-        <table>
-          <thead>
-            <tr>
-              <th>Age</th>
-              <th>Height (approx.)</th>
-              <th>Sweater length</th>
-              <th>Chest</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>0–6 months</td>
-              <td>50–65 cm</td>
-              <td>26–28 cm</td>
-              <td>46–48 cm</td>
-            </tr>
-            <tr>
-              <td>6–12 months</td>
-              <td>65–75 cm</td>
-              <td>29–31 cm</td>
-              <td>50–52 cm</td>
-            </tr>
-            <tr>
-              <td>1–2 years</td>
-              <td>75–88 cm</td>
-              <td>32–34 cm</td>
-              <td>54–56 cm</td>
-            </tr>
-            <tr>
-              <td>3–4 years</td>
-              <td>88–102 cm</td>
-              <td>37–39 cm</td>
-              <td>60–62 cm</td>
-            </tr>
-            <tr>
-              <td>5–6 years</td>
-              <td>102–114 cm</td>
-              <td>42–44 cm</td>
-              <td>66–68 cm</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="care-card">
-        <strong>Care instructions</strong>
-        <ul>
-          <li>Hand wash gently in cold water with mild detergent.</li>
-          <li>Do not wring. Press water out using a towel.</li>
-          <li>Dry flat in shade to maintain shape.</li>
-          <li>Avoid bleach and very hot iron.</li>
-          <li>Store folded, not hanging, to keep knit shape.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section>
-    <div class="section-header">
-      <h2>What parents are saying</h2>
-      <p>Replace these with real reviews when you have them.</p>
-    </div>
-
-    <div class="testimonials">
-      <article class="testimonial">
-        <p>“The sweater fits perfectly and is so soft. My daughter doesn’t want to take it off!”</p>
-        <span>– Riya, Delhi</span>
-      </article>
-      <article class="testimonial">
-        <p>“Ordered a custom baby set for a newborn gift – everyone asked where I got it from.”</p>
-        <span>– Aditi, Mumbai</span>
-      </article>
-      <article class="testimonial">
-        <p>“The colours are beautiful and the quality feels like something my grandma used to knit.”</p>
-        <span>– Karan, Chandigarh</span>
-      </article>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="section-header">
-      <h2>Ready to order?</h2>
-      <p>Send us your child’s age, size and any colour ideas – we’ll take it from there.</p>
-    </div>
-
-    <div class="contact">
-      <div>
-        <div class="contact-row">
-          <strong>How to order</strong>
-          <p>Message us on WhatsApp or Instagram with:</p>
-          <ul class="about-list">
-            <li>Child’s age and approx. height</li>
-            <li>Product type (sweater / set / booties / custom)</li>
-            <li>Preferred colours and style (simple / patterned / name)</li>
-            <li>City + pincode for shipping estimate</li>
-          </ul>
-        </div>
-        <div class="contact-cta">
-          <button class="btn-primary" onclick="window.location.href='https://wa.me/91XXXXXXXXXX'">
-            WhatsApp us
-          </button>
-          <button class="btn-outline" onclick="window.location.href='https://instagram.com/YOUR_HANDLE'">
-            View Instagram gallery
-          </button>
-        </div>
-      </div>
-
-      <div class="contact-row">
-        <strong>Contact details</strong>
-        <p><b>WhatsApp:</b> +91-XXXXXXXXXX</p>
-        <p><b>Instagram:</b> @YOUR_HANDLE</p>
-        <p><b>Email:</b> hello@taanabanakids.com (optional)</p>
-        <p style="font-size:0.8rem;color:#777;margin-top:10px;">
-          We usually reply within 24 hours. For urgent gifting, mention your date in the first message.
-        </p>
-      </div>
-    </div>
-  </section>
-</main>
+</section>
 
 <footer>
-  <span>© <span id="year"></span> Taana Bana Kids. All rights reserved.</span>
-  <span>Hand-knit with love in India 🧶</span>
+    © <span id="year"></span> Taana Bana Kids. Handmade with love 🧶
 </footer>
 
-<script>
-  // Simple script to always show current year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script src="script.js"></script>
+
 </body>
 </html>
-
